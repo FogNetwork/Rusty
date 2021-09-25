@@ -1,0 +1,14 @@
+{
+  "name": "Rusty",
+  "version": "1.0.0",
+  "description": "A simple frontend design for Corrosion you can deploy",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Nebelung",
+  "dependencies": {
+    "corrosion": "^1.0.0",
+    "express": "^4.17.1"
+  }
+}
