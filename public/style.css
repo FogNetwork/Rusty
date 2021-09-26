@@ -52,3 +52,12 @@ body {
   cursor: pointer;
   margin-left: 10px;
 }
+
+.github {
+  color: #cf5153; 
+  height: 50px;
+  width: 50px;
+  font-size: 45px;
+  margin-top: 45px;
+  cursor: pointer;
+}

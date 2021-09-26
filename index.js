@@ -19,6 +19,12 @@ app.use('/', function (req, res) {
     proxy.request(req,res)
 });
 
+// If you want an error page
+//app.use('/', function (req, res) {
+//    if (req.url.startsWith(proxy.prefix)) {proxy.request(req,res)}
+//    else {res.send('<pre>Cannot GET ' + req.url + '</pre>')}
+//});
+
 app.listen(process.env.PORT || port, () => {
   console.log(`Rusty is running at localhost:${port}`)
 })
