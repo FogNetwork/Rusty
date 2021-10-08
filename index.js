@@ -1,5 +1,5 @@
 const port = "8080"
-const Corrosion = require('corrosion')
+const Corrosion = require('./lib/server')
 const express = require('express')
 const app = express()
 
@@ -7,6 +7,7 @@ const proxy = new Corrosion({
     prefix: "/service/",
     codec: "xor",
     title: "Rusty",
+    forceHttps: true
 })
 
 app.use('/', express.static(__dirname + '/public'));

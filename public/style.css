@@ -34,6 +34,7 @@ body {
   caret-color: #cf5153;
   font-size: 20px;
   padding: 5px;
+  border-radius: 5px 0 0 5px;
 }
 
 ::placeholder {
@@ -50,7 +51,7 @@ body {
   outline: none;
   font-size: 20px;
   cursor: pointer;
-  margin-left: 10px;
+  border-radius: 0 5px 5px 0;
 }
 
 .github {
