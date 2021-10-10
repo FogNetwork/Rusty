@@ -45,13 +45,14 @@ body {
 #go {
   border: 2px solid #cf5153;
   color: #cf5153;
-  height: 45px;
+  height: 44px;
   width: 45px;
   background: transparent;
   outline: none;
   font-size: 20px;
   cursor: pointer;
   border-radius: 0 5px 5px 0;
+  border-left: none;
 }
 
 .github {
@@ -61,4 +62,10 @@ body {
   font-size: 45px;
   margin-top: 45px;
   cursor: pointer;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
 }
