@@ -15,8 +15,6 @@ const proxy = new Corrosion({
     ]
 })
 
-proxy.bundleScripts();
-
 app.use('/', express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
