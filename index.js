@@ -15,8 +15,6 @@ const proxy = new Corrosion({
     ]
 })
 
-proxy.bundleScripts();
-
 app.use('/', express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
@@ -24,11 +22,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/', function (req, res) {
-  if (req.url.startsWith(proxy.prefix)) {
-    proxy.request(req,res)
-  } else {
-    res.send("Cannot GET " + req.url)
-  }
+  proxy.request(req,res)
 });
 
 app.listen(process.env.PORT || port, () => {
